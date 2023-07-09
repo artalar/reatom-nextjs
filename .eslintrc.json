@@ -1,3 +1,4 @@
 {
-  "extends": "next/core-web-vitals"
+  "plugins": ["@reatom"],
+  "extends": ["next/core-web-vitals", "plugin:@reatom/recommended"]
 }
