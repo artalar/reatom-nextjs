@@ -10,6 +10,7 @@ import {
 } from '@reatom/framework'
 import { useAtom } from '@reatom/npm-react'
 import { searchParamsAtom } from '@reatom/url'
+import { withSsr } from '~/ssrPersist'
 
 async function fetchIssuesApi(
   query: string,
@@ -54,6 +55,7 @@ export const fetchIssues = reatomAsync(async (ctx, query: string) => {
     length: 50,
     staleTime: Infinity,
     swr: false,
+    withPersist: withSsr,
   }),
   withRetry({
     onReject(ctx, error, retries) {
