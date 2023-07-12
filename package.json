@@ -9,9 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@reatom/framework": "^3.4.7",
-    "@reatom/npm-react": "^3.3.4",
-    "@reatom/persist": "^3.2.2",
+    "@reatom/framework": "^3.4.8",
+    "@reatom/npm-react": "^3.4.0",
+    "@reatom/persist": "^3.3.0",
+    "@reatom/url": "^3.1.0",
     "@types/node": "20.4.1",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
@@ -25,7 +26,7 @@
   "devDependencies": {
     "@reatom/eslint-plugin": "^3.4.0",
     "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-prettier": "^5.0.0",
     "prettier": "^3.0.0"
   }
 }
